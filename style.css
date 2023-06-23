@@ -32,7 +32,7 @@ li {
 
 
 section p {
-
+    line-height: 1.3em;
     text-align: justify;
     position: relative;
     top: 25vh;

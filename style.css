@@ -1,21 +1,50 @@
 header {
+
     height: 100vh;
     background-image: url(img/zoltan-tasi-7qhm0GNurTc.jpg);
     background-position: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
-   
 
-    
+
+
 
 }
+
+nav {
+    top: -5px;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    position: fixed;
+}
+
 nav ul {
+
     display: flex;
     color: white;
     justify-content: center;
-  
-}
-li{
-    margin: 0.5em 1em;
+
 }
 
+li {
+    margin: 1.5em 1em;
+}
+
+
+section p {
+    font-size: 1.3em;
+    text-align: justify;
+    position: relative;
+    top: 25vh;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.482);
+    line-height: 1.5em;
+    padding: 2em;
+    margin: auto;
+    width: 50%;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}

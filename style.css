@@ -2,8 +2,20 @@ header {
     height: 100vh;
     background-image: url(img/zoltan-tasi-7qhm0GNurTc.jpg);
     background-position: center;
-    background-size: 100%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
+   
 
-    color: red;
+    
+
 }
+nav ul {
+    display: flex;
+    color: white;
+    justify-content: center;
+  
+}
+li{
+    margin: 0.5em 1em;
+}
+

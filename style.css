@@ -32,13 +32,13 @@ li {
 
 
 section p {
-    font-size: 1.3em;
+
     text-align: justify;
     position: relative;
     top: 25vh;
     color: aliceblue;
     background-color: rgba(0, 0, 0, 0.482);
-    line-height: 1.5em;
+    
     padding: 2em;
     margin: auto;
     width: 50%;

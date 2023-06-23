@@ -2,5 +2,6 @@ header{
     height: 100vh;
     background-image: url(img/zoltan-tasi-7qhm0GNurTc.jpg);
 background-position: center;
-object-fit: cover;
+background-size: contain;
+
 }

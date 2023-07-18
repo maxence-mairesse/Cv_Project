@@ -1,7 +1,7 @@
 header {
 
     height: 100vh;
-    background-image: url(img/zoltan-tasi-7qhm0GNurTc.jpg);
+    background-image: url(../img/zoltan-tasi-7qhm0GNurTc.jpg);
     background-position: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -16,6 +16,7 @@ nav {
     width: 100%;
     background-color: rgb(41, 41, 41);
     position: fixed;
+    z-index: 1;
 }
 
 nav ul {
@@ -47,4 +48,40 @@ section p {
 
 a:hover {
     text-decoration: underline;
+}
+
+main {
+    font-size: 1.5em;
+    color: aliceblue;
+    background-color: rgb(122, 122, 122);
+}
+article{
+    background-color: rgba(0, 0, 0, 0.651);
+    margin: auto;
+   
+    margin-bottom: 2em;
+    width: 75%;
+   padding: 1em;
+    text-align: center;
+}
+
+em{
+   font-weight: 900;
+    font-style: italic;
+    font-size: 0.8em;
+    
+}
+ul{
+    width: 75%;
+    margin: auto;
+    text-align: left;
+}
+
+article ul li{
+    border-left: solid 1px white;
+    padding-left: 0.5em;
+}
+hr{
+    width: 50%;
+    margin-bottom: 2em;
 }

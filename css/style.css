@@ -1,92 +1,188 @@
+@font-face {
+    font-family: 'Rounded';
+    src: url("fonts/Rounded/Rounded-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Rounded-bold';
+    src: url("fonts/Rounded/Rounded-Bold.ttf") format('truetype');
+}@font-face {
+    font-family: 'Rounded-Light';
+    src: url("fonts/Rounded/Rounded-Light.ttf") format('truetype');
+}
+@keyframes welcome {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animated-element {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1s ease-out, transform 1s ease-in;
+}
+.animated-element.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 body{
-    background-color: rgb(122, 122, 122);
-}
-
-header {
-
-    height: 100vh;
-    background-image: url(../img/zoltan-tasi-7qhm0GNurTc.jpg);
-    background-position: center;
-    background-size: 100% auto;
+    background-image: url("../img/Fond_ecran.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
-
-
-
-
-}
-
-
-nav {
-    top: -5px;
-    width: 100%;
-    background-color: rgb(41, 41, 41);
-    position: fixed;
-    z-index: 1;
-}
-
-nav ul {
-
-    display: flex;
-    color: white;
-    justify-content: center;
-
-}
-
-li {
-    margin: 1.5em 1em;
-}
-
-
-section p {
-    line-height: 1.3em;
-    text-align: justify;
-    position: relative;
-    top: 25vh;
+    background-size: 100%;
+    font-family: 'Rounded', serif;
     color: aliceblue;
-    background-color: rgba(0, 0, 0, 0.482);
-    
-    padding: 2em;
-    margin: auto;
-    width: 50%;
-
 }
-
-a:hover {
-    text-decoration: underline;
-}
-
-main {
-    font-size: 1.5em;
-    color: aliceblue;
-    background-color: rgb(122, 122, 122);
-}
-article{
-    background-color: rgba(0, 0, 0, 0.651);
-    margin: auto;
-   margin-top: 2em ;
-    margin-bottom: 2em;
-    width: 75%;
-   padding: 1em;
+header h1{
+    font-family: 'Rounded-bold', serif;
+    font-size: 4em;
     text-align: center;
+    animation: welcome 1s ease-in;
+
 }
 
-em{
-   font-weight: 900;
-    font-style: italic;
-    font-size: 0.8em;
-    
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-ul{
-    width: 75%;
+h2{
+    text-align: center;
+    font-family: 'Rounded-bold', serif;
+    font-size: 3em;
+
+}
+h3{
+    text-align: center;
+    font-family: 'Rounded-Light', serif;
+    font-size: 2.5em;
+    margin-left: 300px;
+}
+
+#presentation{
+
+    width: 50%;
     margin: auto;
-    text-align: left;
+    margin-bottom: 50vh;
+
 }
 
-article ul li{
-    border-left: solid 1px white;
-    padding-left: 0.5em;
+#presentation p{
+    margin-top: 1em;
+    text-align: center;
+    font-family: 'Rounded-Light',serif;
+    font-size: 1.5em;
+
+}
+#presentation img{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#presentation p span{
+    font-family: 'Rounded-bold', serif;
+    font-size: 1em;
+
+}
+#skills{
+    height: 100vh;
+    position: relative;
+}
+#skills p {
+
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+
+}
+
+#front{
+    position: relative;
+    width: 50%;
+    left: 0;
+}
+
+#front h3 {
+    font-size: 2em;
+    text-align: left ;
+}
+
+#front ul {
+   display: flex;
+    justify-content: flex-start;
+}
+#front div {
+   margin: 0 15%;
+}
+#front div li {
+    text-align: center;
+    margin: 2em
+}
+
+
+#back{
+
+    position: relative;
+    width: 50%;
+    left: 50vw;
+
+}
+#back h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-right: 300px;
+}
+#back ul {
+    margin: 2em;
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+
+}
+#back div {
+    margin: 0 15%;
+}
+#back div li {
+    text-align: center;
+    margin: 2em;
+    font-size: 0.9em;
+}
+
+
+#cms{
+    position: relative;
+    width: 50%;
+    left: 0;
+
+}
+#cms h3 {
+    font-size: 2em;
+    text-align: left;
+    letter-spacing: 10px;
+
+}
+#cms ul{
+    display: flex;
+    justify-content: flex-start;
+}
+#cms div {
+    margin: 0 15%;
+}
+#cms div li {
+    text-align: center;
+    margin: 2em
 }
 hr{
-    width: 50%;
-    margin-bottom: 2em;
+    margin: 2em auto;
+    border: solid  aliceblue 2px;
+    border-radius: 2em;
+    width: 25%;
 }

@@ -13,5 +13,21 @@ $diplomes = [
 ];
 
 
-$competences =[]
-?>
+$competences =[
+    'name'=>['HTML5','CSS','Javascript','PHP','React','Ajax','Bootstrap','MySQL','Laravel','Wordpress','Photoshop'],
+    'logo'=>['img/logo/html5.png','img/logo/css.png','img/logo/javascript.svg','img/logo/php.svg','img/logo/react.svg','img/logo/ajax.webp','img/logo/bootstrap.svg','img/logo/mysql.svg','img/logo/laravel.svg','img/logo/wordpress.svg','img/logo/photoshop.svg']
+];
+$softSkill = [
+    'name' =>[ "POLYVALENT",
+"ESPRIT D'ÉQUIPE",
+"MINUTIEUX",
+"CRÉATIF",
+"ORGAGNISÉ",
+"ESPRIT CRITIQUE",
+"ADAPTATION",
+"DÉBROUILLARD",
+"GESTION DU STRESS",
+"CURIEUX",
+"AUTONOME",
+"LUCIDITÉ"]
+];

@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const animatedElement = document.querySelector('.animated-element');
 
 function target (e){
-    log
+
 }
     function isElementInViewport(e) {
-        console.log(e)
+
         const rect = e.getBoundingClientRect();
 
         return (

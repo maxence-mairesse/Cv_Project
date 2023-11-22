@@ -21,6 +21,8 @@ function target (e){
             animatedElement.classList.add('animate');
             // Désactive l'écouteur d'événements une fois l'animation déclenchée
 
+        }else {
+            animatedElement.classList.remove('animate')
         }
     }
 

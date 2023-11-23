@@ -5,7 +5,8 @@
 @font-face {
     font-family: 'Rounded-bold';
     src: url("fonts/Rounded/Rounded-Bold.ttf") format('truetype');
-}@font-face {
+}
+@font-face {
     font-family: 'Rounded-Light';
     src: url("fonts/Rounded/Rounded-Light.ttf") format('truetype');
 }
@@ -29,8 +30,6 @@
     opacity: 1;
     transform: translateX(40px);
 }
-
-
 body{
     background-image: url("../img/Fond_ecran.jpg");
     background-attachment: fixed;
@@ -46,7 +45,6 @@ header h1{
     animation: welcome 1s ease-in;
 
 }
-
 header{
     height: 100vh;
     display: flex;
@@ -57,13 +55,21 @@ header{
 h2{
     text-align: center;
     font-family: 'Rounded-bold', serif;
-    font-size: 2em;
+    font-size: 2.5em;
 
 }
 h3{
     text-align: center;
+    font-family: 'Rounded', serif;
+    font-size: 2em;
+
+}
+h4{
+
+    text-align: center;
     font-family: 'Rounded-Light', serif;
     font-size: 1.5em;
+
 
 }
 nav{
@@ -74,14 +80,11 @@ nav ul {
     justify-content: center;
 }
 nav ul li {
-margin: 0.5em;
-transition: 0.5s}
-
+    margin: 0.5em;
+    transition: 0.5s}
 nav ul li:hover {
     font-size: 1.5em;
-transition: 0.5s}
-
-
+    transition: 0.5s}
 #presentation{
     position: relative;
     margin: auto;
@@ -98,10 +101,8 @@ transition: 0.5s}
     margin-left: 130px;
     width: fit-content;
 }
-
-
 #presentation img{
-   position: absolute;
+    position: absolute;
     right: 0;
     top: 0;
     width: 50px;
@@ -109,41 +110,125 @@ transition: 0.5s}
     border-radius: 50%;
 
 }
-
 #skills{
-    height: 100vh;
+
     position: relative;
 }
-
-
-.skills-block{
+#skills h2{
+    padding-top: 2em;
+}
+#hardskills{
     margin-top: 50px;
 }
-
-
-.skills-block ul {
+.skills-block{
+    margin-top: 20px;
+}
+.skills-block .list-skill {
     width: 100%;
-   display: flex;
+    display: flex;
     justify-content: center;
 }
 .skills-block div {
-   margin: auto;
+    margin: auto;
 }
 .skills-block div li {
     font-family: 'Rounded-bold', serif;
     text-align: center;
     margin: 2em
 }
+#hardskills{
 
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 20px;
+    width: 75%;
+    box-shadow: #8686a4 5px 5px 100px;
+}
+#softskill{
 
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 20px;
+    width: 75%;
+    box-shadow: #8686a4 5px 5px 100px;
+}
+.list-softskill li{
 
-hr{
-    margin: 2em auto;
-    border: solid  aliceblue 1px;
-    border-radius: 2em;
-    width: 25%;
+    margin-bottom: 3em !important;
+}
+#diplomes{
+    margin-top: 25vh;
+    padding-top: 25px;
+    height: 100vh;
+
+}
+#diplomes .bar{
+    position: relative;
+    width: 320px;
+    height: 0;
+    left: -110px;
+    top: 160px;
+    rotate: 90deg;
+    border:solid aliceblue 1px;
+}
+#diplomes div .ronds{
+    width: 20px;
+    height: 20px;
+    border:solid 1px #ffffff;
+    border-radius: 30px;
+    margin: 0 0 80px 40px;
+}
+#diplomes div {
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 20px;
+    width: 75%;
+    box-shadow: #8686a4 5px 5px 100px;
+}
+#diplomes h5 span {
+    padding-top: 1em;
+}
+#diplomes h5  {
+   width: fit-content;
+}
+.formation{
+    font-size: .7em;
+    position: relative;
+    margin: 0 0 78px 40px;
+    top:-472px;
+    left: 25%;
 }
 
+footer{
+    box-shadow: #8686a4 5px 5px 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 0 2em 2em 2em;
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+footer ul li i {
+    margin-right: .5em;
+
+}
+footer ul li  {
+
+    font-size: .6em;
+}
+@media (min-width: 768px) {
+    .formation{
+        font-size: 1em;
+        margin: 0 0 68px 40px;
+        left: 20%;
+    }
+
+
+}
 @media (min-width: 1024px) {
     #presentation h2 {
         font-size: 4em;
@@ -157,4 +242,19 @@ hr{
         margin-left: 50px;
 
     }
-}
+    #diplomes hr{
+        position: relative;
+        top: 169px;
+        left: -59vh;
+        border:solid aliceblue 1px;
+    }
+    #diplomes h5 br{
+        display: none;}
+    .formation{
+        margin: 0 0 84px 40px;
+    }
+    footer ul li  {
+
+        font-size: 1.5em;
+    }
+    }
